@@ -14,14 +14,14 @@ const projects: Project[] = [
     desc: "Payment platform used by ~90% of UK councils.",
     details:
       "Developed and maintained Angular + C# features, optimised SQL queries, and improved backend performance for large-scale payment processing.",
-    link: undefined,
+    link: "https://www.accesspaysuite.com/our-brands/pay360/",
   },
   {
     title: "PayCircle Payroll",
     desc: "Cloud payroll system with HMRC compliance.",
     details:
       "Implemented features and resolved payroll issues using AngularJS, C#, and SQL, including critical data fixes.",
-    link: undefined,
+    link: "https://payroll.paycircle.co.uk/login",
   },
   {
     title: "Distributed Whiteboard",
