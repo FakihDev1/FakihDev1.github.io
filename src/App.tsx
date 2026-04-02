@@ -57,9 +57,7 @@ export default function Portfolio() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    // Updated background with a lighter, dynamic gradient
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 text-slate-900 font-sans antialiased">
-      {/* HERO - Brighter content */}
       <section className="text-center py-20 px-6">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -77,7 +75,6 @@ export default function Portfolio() {
           Software Engineer • Enterprise Systems • Full Stack Development
         </motion.p>
 
-        {/* Call to action buttons with more dramatic hover effects */}
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
           <motion.a
             whileHover={{ scale: 1.05, translateY: -3 }}
@@ -104,7 +101,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* ABOUT - Glassmorphism card */}
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -125,7 +121,6 @@ export default function Portfolio() {
         </motion.div>
       </section>
 
-      {/* SKILLS - Interactive badges */}
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <h2 className="text-3xl font-bold mb-8 text-slate-950 tracking-tight">
           Technical Skills
@@ -153,7 +148,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* EXPERIENCE - Dynamic timeline with clean design */}
       <section className="max-w-5xl mx-auto px-6 mb-20">
         <h2 className="text-3xl font-bold mb-12 text-slate-950 tracking-tight">
           Experience
@@ -201,7 +195,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* CURRENTLY WORKING ON - Focused section with clean aesthetic */}
       <section className="max-w-5xl mx-auto px-6 mb-20">
         <h2 className="text-3xl font-bold mb-8 text-slate-950 tracking-tight">
           Currently Working On
@@ -233,7 +226,6 @@ export default function Portfolio() {
         </motion.div>
       </section>
 
-      {/* PROJECTS - Grid with more distinct cards and animations */}
       <section id="projects" className="max-w-5xl mx-auto px-6 mb-20">
         <h2 className="text-3xl font-bold mb-8 text-slate-950 tracking-tight">
           Projects
@@ -263,7 +255,7 @@ export default function Portfolio() {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()} // prevent modal opening
+                  onClick={(e) => e.stopPropagation()}
                   className="mt-5 inline-block px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700 text-base transition duration-300 font-semibold text-center w-full">
                   Visit Site
                 </a>
@@ -273,7 +265,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* MODAL - Simplified and cleaner with dynamic entry */}
       <AnimatePresence>
         {selected && (
           <motion.div
@@ -288,8 +279,7 @@ export default function Portfolio() {
               exit={{ scale: 0.9, y: 20, opacity: 0 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="bg-white border border-slate-100 p-10 rounded-3xl max-w-lg shadow-2xl relative"
-              onClick={(e) => e.stopPropagation()} // stop click from closing modal
-            >
+              onClick={(e) => e.stopPropagation()}>
               <button
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition"
                 onClick={() => setSelected(null)}>
@@ -325,7 +315,6 @@ export default function Portfolio() {
         )}
       </AnimatePresence>
 
-      {/* FOOTER - Clean text with dynamic content */}
       <footer className="text-center py-10 text-slate-500 text-base">
         © {new Date().getFullYear()} Muneer Fakih • Built with precision
       </footer>
