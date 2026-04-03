@@ -162,16 +162,11 @@ export default function Portfolio() {
             className="relative p-6 bg-white rounded-2xl border border-slate-100 shadow-md">
             <div className="absolute -left-[51px] top-6 w-8 h-8 bg-white border-4 border-sky-500 rounded-full shadow" />
             <h3 className="font-semibold text-slate-950 text-xl">
-              Technical Specialist — DXC Technology
+              Applications Engineer — DXC Technology
             </h3>
             <span className="text-sm font-medium text-slate-500">
               2025 — Present
             </span>
-            <p className="text-slate-600 text-base mt-3 leading-relaxed">
-              Supporting enterprise applications, diagnosing issues using logs
-              and monitoring tools, and automating fixes to improve reliability
-              and system uptime.
-            </p>
           </motion.div>
 
           <motion.div
