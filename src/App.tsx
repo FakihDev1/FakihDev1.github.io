@@ -90,15 +90,6 @@ export default function Portfolio() {
             className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-2xl hover:bg-slate-100 transition text-lg font-semibold bg-white">
             GitHub
           </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            href="/Muneer_Fakih_Tech_CV.pdf"
-            download
-            className="px-8 py-4 bg-white border border-slate-200 text-slate-950 rounded-2xl shadow-md hover:bg-slate-50 transition font-semibold text-lg">
-            Download CV
-          </motion.a>
         </div>
       </section>
 
